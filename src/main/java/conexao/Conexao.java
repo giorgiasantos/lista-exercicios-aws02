@@ -9,7 +9,7 @@ public class Conexao {
     public static Connection getConnection(){
 
         try{
-            Connection connection = DriverManager.getConnection("jdbc:postgresql://aws.cek2nmi2tmwz.sa-east-1.rds.amazonaws.com:5432/estacionamentodeep", "postgres", "root1234");
+            Connection connection = DriverManager.getConnection("jdbc:postgresql://estacionamento-aws.cek2nmi2tmwz.sa-east-1.rds.amazonaws.com/estacionamentodeep", "postgres", "root1234");
             return connection;
         }catch (SQLException e){
             e.printStackTrace();

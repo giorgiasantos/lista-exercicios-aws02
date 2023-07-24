@@ -24,7 +24,8 @@ public class Service {
     // método para cadastrar novo carro no sistema
     public void cadastrarCarro(String nomeDono, String marca, String placa, Boolean estado){
 
-        String sql = "INSERT INTO tb_carro (nomedono, marcacarro, placa, estado) VALUES ('" + nomeDono + "', '" + marca + "', '" + placa +"', '" + estado +"')";
+        String sql = "INSERT INTO tb_carro (nomedono, marcacarro, placa, estado, usuario) VALUES ('" +
+                nomeDono + "','"  +  marca+ "','"  +  placa + "','"  +  estado + "','giorgia')";
 
         try {
             statement.executeUpdate(sql);
